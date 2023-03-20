@@ -2,7 +2,6 @@
 
 ## Quality of the hospitals and support to doctors’ decision 
 
- 
 
 Heart failure (HF) is a pathophysiological state in which the heart fails to supply required amount of blood and oxygen to the body; it is a common, widespread all over the world, costly, chronic and potentially fatal condition. 
 
@@ -33,5 +32,13 @@ Imagine that a specific patient has a 50 days long hospitalization, after this p
 Lastly, we investigated the duration of a single hospitalization; this can be useful in a decision-making process, with previous model information, and on an organization level because the hospital must know how long it has to reserve a room for a specific patient. 
 
 We introduced a mixed effects linear models taking into account all the hospitalization in the 3 years after the first one; we considered heteroskedasticity among the residuals because we observed a different variability over time. Under our point of view, it makes sense that the variability is increasing in time, in fact the evolution of different diseases in not equal for everyone. 
+
+
+Authors:
+- Christopher Volpi
+- Francesco Songia
+- Giuseppe Tancredi Morra
+- Niccolò Donadini
+- Samuele Marchioni
 
  
