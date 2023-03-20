@@ -2,6 +2,7 @@
 ## Quality of the hospitals and support to doctors’ decision 
 
 
+Check [HF_QualitySupport.pdf] (https://github.com/FoxChris99/HF_Mixed_Models/blob/main/HF_QualitySupport.pdf) for full details
 #### Our Goal
 Heart failure (HF) is a pathophysiological state in which the heart fails to supply required amount of blood and oxygen to the body; it is a common, widespread all over the world, costly, chronic and potentially fatal condition. 
 
