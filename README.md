@@ -8,7 +8,7 @@ Heart failure (HF) is a pathophysiological state in which the heart fails to sup
 The aim of our project is to analyze the impact of different hospital on the treatment of the HF and to build statistically significant models that can help doctors in the decision-making process. 
 
 
-#### Exploratory and Fragility Analysis
+#### Data and Fragility Analysis
 The dataset, from Regione Lombardia, collects hospitalizations and medical histories from 2006 to 2012 in
 Lombardia. It includes patients’ and hospitals’ characteristics as well as information
 related to hospitalizations, such as clinical interventions, duration and diagnosis.
