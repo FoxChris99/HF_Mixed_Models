@@ -1,11 +1,14 @@
 # Heart failures and linear mixed effect models: 
-
 ## Quality of the hospitals and support to doctors’ decision 
 
 
 Heart failure (HF) is a pathophysiological state in which the heart fails to supply required amount of blood and oxygen to the body; it is a common, widespread all over the world, costly, chronic and potentially fatal condition. 
 
 The aim of our project is to analyze the impact of different hospital on the treatment of the HF and to build statistically significant models that can help doctors in the decision-making process. 
+
+The dataset, from Regione Lombardia, collects hospitalizations and medical histories from 2006 to 2012 in
+Lombardia. It includes patients’ and hospitals’ characteristics as well as information
+related to hospitalizations, such as clinical interventions, duration and diagnosis.
 
  
 
@@ -27,7 +30,7 @@ In the case of re-hospitalization probability, we used a logistic linear mixed e
 
 Practically this model can be thought to help doctors understanding how to treat the patient in the future, let us make this concept clearer with an example: 
 
-Imagine that a specific patient has a 50 days long hospitalization, after this period a doctor has to decide how to continue the treatment and, with the support of our model, he not only takes this decision using his medical knowledge but also running a prediction based on our model. An estimated response of 0, no re-hospitalization, suggest that it will be more likely to be safe for the patient to go home.  Otherwise, the patient will need further attention and the doctor must decide whether to send him home with an eventual prescription and a future check or to continue the current hospitalization. 
+Imagine that a specific patient has a 14 days long hospitalization, after this period a doctor has to decide how to continue the treatment and, with the support of our model, he not only takes this decision using his medical knowledge but also running a prediction based on our model. An estimated response of 0, no re-hospitalization, suggest that it will be more likely to be safe for the patient to go home.  Otherwise, the patient will need further attention and the doctor must decide whether to send him home with an eventual prescription and a future check or to continue the current hospitalization. 
 
 Lastly, we investigated the duration of a single hospitalization; this can be useful in a decision-making process, with previous model information, and on an organization level because the hospital must know how long it has to reserve a room for a specific patient. 
 
