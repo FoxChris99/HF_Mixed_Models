@@ -35,7 +35,7 @@ Practically this model can be thought to help doctors understanding how to treat
 
 Imagine that a specific patient has a 14 days long hospitalization, after this period a doctor has to decide how to continue the treatment and, with the support of our model, he not only takes this decision using his medical knowledge but also running a prediction based on our model. An estimated response of 0, no re-hospitalization, suggest that it will be more likely to be safe for the patient to go home.  Otherwise, the patient will need further attention and the doctor must decide whether to send him home with an eventual prescription and a future check or to continue the current hospitalization. 
 
-#### NESTED MIXED EFFECTS LINEAR MODEL- DURATION OF A HOSPITALIZATION
+#### DURATION OF A HOSPITALIZATION - NESTED MIXED EFFECTS LINEAR MODEL
 Lastly, we investigated the duration of a single hospitalization; this can be useful in a decision-making process, with previous model information, and on an organization level because the hospital must know how long it has to reserve a room for a specific patient. 
 
 We introduced a mixed effects linear models taking into account all the hospitalization in the 3 years after the first one; we considered heteroskedasticity among the residuals because we observed a different variability over time. Under our point of view, it makes sense that the variability is increasing in time, in fact the evolution of different diseases in not equal for everyone. 
