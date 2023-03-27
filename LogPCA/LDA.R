@@ -1,6 +1,5 @@
 library(MASS)
 load("C:/Users/foxfo/OneDrive/Desktop/Applied Statistics/Project/HeartFailure/pazienti/PATIENTS_MCA.Rda")
-load("C:/Users/foxfo/OneDrive/Desktop/Applied Statistics/Project/HeartFailure/pazienti/com_pat100.Rda")
 
 df = data.frame(PATIENTS_LPCA[,-c(11,12,13,14,15)], logpca_model$PCs)
 label <- factor(df$labelOUT, labels=c('DECEDUTO','TRONCATO'))
@@ -28,7 +27,7 @@ Lda.patients$posterior
 #guardiamo i problemi ai polmoni riferendoci a PC1 e PC2
 polmoni = factor(com_pat$pulmonarydz, labels=c('0','1'))
 x11()
-#plot(as.matrix(df), main='label', xlab='età', ylab='num_osp', pch=20)
+#plot(as.matrix(df), main='label', xlab='etÃ ', ylab='num_osp', pch=20)
 #points(as.matrix(df)[d,], col='red', pch=20)
 #points(as.matrix(df)[t,], col='green', pch=20)
 col.polm = ifelse(polmoni ==1 , 'red', 'blue')
@@ -66,7 +65,7 @@ Lda.patients <- predict(lda.patients, as.matrix(df))
 
 
 x11()
-#plot(as.matrix(df), main='label', xlab='età', ylab='num_osp', pch=20)
+#plot(as.matrix(df), main='label', xlab='etÃ ', ylab='num_osp', pch=20)
 #points(as.matrix(df)[d,], col='red', pch=20)
 #points(as.matrix(df)[t,], col='green', pch=20)
 color = ifelse(hypertension ==1 , 'red', 'blue')
@@ -104,7 +103,7 @@ Lda.patients <- predict(lda.patients, as.matrix(df))
 
 
 x11()
-#plot(as.matrix(df), main='label', xlab='età', ylab='num_osp', pch=20)
+#plot(as.matrix(df), main='label', xlab='etÃ ', ylab='num_osp', pch=20)
 #points(as.matrix(df)[d,], col='red', pch=20)
 #points(as.matrix(df)[t,], col='green', pch=20)
 color = ifelse(arrhythmia ==1 , 'red', 'blue')
