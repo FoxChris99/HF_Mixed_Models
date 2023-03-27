@@ -1,8 +1,7 @@
 library(logisticPCA)
 library(ggplot2)
 library(rARPACK)
-load("C:/Users/foxfo/OneDrive/Desktop/Applied Statistics/Project/HeartFailure/pazienti/PATIENTS_MCA.Rda")
-load("C:/Users/foxfo/OneDrive/Desktop/Applied Statistics/Project/HeartFailure/pazienti/com_pat100.Rda")
+
 
 
 D=com_pat[,-c( 1,5,7,19)]
@@ -27,10 +26,10 @@ scores = logpca_model$PCs
 loadings = logpca_model$U
 
 #variances of original variables
-#ci aspettiamo che solo le comorb con alta variabilit‡ verranno spiegate da pca
+#ci aspettiamo che solo le comorb con alta variabilit√† verranno spiegate da pca
 barplot(sapply(D,sd)^2, las=2, main='Original Variables', ylim=c(0,4), ylab='Variances')
 
-#vedo i loadings significativi abs > 0.4 si puÚ pensare di cambiarlo (abbassarlo)
+#vedo i loadings significativi abs > 0.4 si pu√≤ pensare di cambiarlo (abbassarlo)
 x11()
 par(mar = c(1,5,0,2), mfrow = c(5,1))
 for(i in 1:5) barplot(ifelse(abs(loadings[,i]) < 0.25, 0, loadings[,i]) , ylim = c(-1, 1),names.arg = colnames(D))
