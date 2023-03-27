@@ -1,7 +1,7 @@
 library(logisticPCA)
 library(ggplot2)
 library(rARPACK)
-load("C:/Users/foxfo/OneDrive/Desktop/Applied Statistics/Project/HeartFailure/pazienti/com_pat100.Rda")
+
 #da caricare dataset com_pat100
 D=com_pat[,-c( 1,5,7,19)]
 D=D[,-c(1,2,17,6,10,11,5,13,14)]#logpca su 9 comorb
@@ -26,8 +26,8 @@ for(i in 1:5) barplot(ifelse(abs(loadings[,i]) < 0.25, 0, loadings[,i]) , ylim =
 #-
 #spiega i problemi ai polmoni: pulmonarydz, pulmcirc, pvd (pulmonary vascular disease)
 #che sono correlati all'hypertensione polmonare 
-#e all'anemia (il numero di globuli rossi non è sufficiente a trasportare abbastanza ossigeno)
-#pulmonarydz è ostruzione dei polmoni, collegata a pulmcirc e problemi del trasporto di ossigeno
+#e all'anemia (il numero di globuli rossi non Ã¨ sufficiente a trasportare abbastanza ossigeno)
+#pulmonarydz Ã¨ ostruzione dei polmoni, collegata a pulmcirc e problemi del trasporto di ossigeno
 
 #####################
 #pc2
@@ -35,7 +35,7 @@ for(i in 1:5) barplot(ifelse(abs(loadings[,i]) < 0.25, 0, loadings[,i]) , ylim =
 #- arrhythmia, hypertension
 #+ pulmonarydz
 #spiega la contrapposizione tra problemi polmonari (pulmonarydz) e del sangue
-#che però non sono strettamente legati ai polmoni: hypertensione arteriosa e aritmia, che
+#che perÃ² non sono strettamente legati ai polmoni: hypertensione arteriosa e aritmia, che
 #sono correlate tra loro
 
 ####################
